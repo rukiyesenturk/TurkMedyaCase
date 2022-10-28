@@ -9,21 +9,85 @@
 /* Begin PBXBuildFile section */
 		FA3B0936290A95C700D1C842 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3B0935290A95C700D1C842 /* AppDelegate.swift */; };
 		FA3B0938290A95C700D1C842 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3B0937290A95C700D1C842 /* SceneDelegate.swift */; };
-		FA3B093A290A95C700D1C842 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3B0939290A95C700D1C842 /* ViewController.swift */; };
+		FA3B093A290A95C700D1C842 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3B0939290A95C700D1C842 /* HomeVC.swift */; };
 		FA3B093D290A95C700D1C842 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA3B093B290A95C700D1C842 /* Main.storyboard */; };
 		FA3B093F290A95C800D1C842 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA3B093E290A95C800D1C842 /* Assets.xcassets */; };
 		FA3B0942290A95C800D1C842 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA3B0940290A95C800D1C842 /* LaunchScreen.storyboard */; };
+		FA3B0952290A96BA00D1C842 /* StreamingKit.docc in Sources */ = {isa = PBXBuildFile; fileRef = FA3B0951290A96BA00D1C842 /* StreamingKit.docc */; };
+		FA3B0958290A96BB00D1C842 /* StreamingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA3B094E290A96BA00D1C842 /* StreamingKit.framework */; };
+		FA3B095F290A96BB00D1C842 /* StreamingKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3B095E290A96BB00D1C842 /* StreamingKitTests.swift */; };
+		FA3B0960290A96BB00D1C842 /* StreamingKit.h in Headers */ = {isa = PBXBuildFile; fileRef = FA3B0950290A96BA00D1C842 /* StreamingKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA3B0963290A96BB00D1C842 /* StreamingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA3B094E290A96BA00D1C842 /* StreamingKit.framework */; };
+		FA3B0964290A96BB00D1C842 /* StreamingKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FA3B094E290A96BA00D1C842 /* StreamingKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FA3B096D290A973F00D1C842 /* StreamingVideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3B096C290A973F00D1C842 /* StreamingVideoPlayer.swift */; };
+		FA3B0971290AABE100D1C842 /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3B0970290AABE100D1C842 /* NewsCell.swift */; };
+		FA3B0973290AADE700D1C842 /* NewsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3B0972290AADE700D1C842 /* NewsData.swift */; };
+		FA3B0975290AAF6600D1C842 /* NewsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3B0974290AAF6600D1C842 /* NewsManager.swift */; };
+		FA3B0978290ABB6E00D1C842 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = FA3B0977290ABB6E00D1C842 /* Kingfisher */; };
+		FA3B097A290AE1E200D1C842 /* NewsDetailData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3B0979290AE1E200D1C842 /* NewsDetailData.swift */; };
+		FAC05459290BE82E00C1C2DD /* NewsDetailManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC05458290BE82E00C1C2DD /* NewsDetailManager.swift */; };
+		FAC0545B290BEF8C00C1C2DD /* NewsDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC0545A290BEF8C00C1C2DD /* NewsDetailVC.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FA3B0959290A96BB00D1C842 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA3B092A290A95C700D1C842 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA3B094D290A96BA00D1C842;
+			remoteInfo = StreamingKit;
+		};
+		FA3B095B290A96BB00D1C842 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA3B092A290A95C700D1C842 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA3B0931290A95C700D1C842;
+			remoteInfo = TurkMedyaCase;
+		};
+		FA3B0961290A96BB00D1C842 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA3B092A290A95C700D1C842 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA3B094D290A96BA00D1C842;
+			remoteInfo = StreamingKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FA3B0968290A96BB00D1C842 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				FA3B0964290A96BB00D1C842 /* StreamingKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		FA3B0932290A95C700D1C842 /* TurkMedyaCase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TurkMedyaCase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA3B0935290A95C700D1C842 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA3B0937290A95C700D1C842 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FA3B0939290A95C700D1C842 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FA3B0939290A95C700D1C842 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		FA3B093C290A95C700D1C842 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FA3B093E290A95C800D1C842 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA3B0941290A95C800D1C842 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA3B0943290A95C800D1C842 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA3B094E290A96BA00D1C842 /* StreamingKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = StreamingKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA3B0950290A96BA00D1C842 /* StreamingKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StreamingKit.h; sourceTree = "<group>"; };
+		FA3B0951290A96BA00D1C842 /* StreamingKit.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = StreamingKit.docc; sourceTree = "<group>"; };
+		FA3B0957290A96BB00D1C842 /* StreamingKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StreamingKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA3B095E290A96BB00D1C842 /* StreamingKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamingKitTests.swift; sourceTree = "<group>"; };
+		FA3B096C290A973F00D1C842 /* StreamingVideoPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamingVideoPlayer.swift; sourceTree = "<group>"; };
+		FA3B0970290AABE100D1C842 /* NewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
+		FA3B0972290AADE700D1C842 /* NewsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsData.swift; sourceTree = "<group>"; };
+		FA3B0974290AAF6600D1C842 /* NewsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsManager.swift; sourceTree = "<group>"; };
+		FA3B0979290AE1E200D1C842 /* NewsDetailData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailData.swift; sourceTree = "<group>"; };
+		FAC05458290BE82E00C1C2DD /* NewsDetailManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailManager.swift; sourceTree = "<group>"; };
+		FAC0545A290BEF8C00C1C2DD /* NewsDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +95,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA3B0978290ABB6E00D1C842 /* Kingfisher in Frameworks */,
+				FA3B0963290A96BB00D1C842 /* StreamingKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA3B094B290A96BA00D1C842 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA3B0954290A96BB00D1C842 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA3B0958290A96BB00D1C842 /* StreamingKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,6 +122,8 @@
 			isa = PBXGroup;
 			children = (
 				FA3B0934290A95C700D1C842 /* TurkMedyaCase */,
+				FA3B094F290A96BA00D1C842 /* StreamingKit */,
+				FA3B095D290A96BB00D1C842 /* StreamingKitTests */,
 				FA3B0933290A95C700D1C842 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +132,8 @@
 			isa = PBXGroup;
 			children = (
 				FA3B0932290A95C700D1C842 /* TurkMedyaCase.app */,
+				FA3B094E290A96BA00D1C842 /* StreamingKit.framework */,
+				FA3B0957290A96BB00D1C842 /* StreamingKitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,16 +143,51 @@
 			children = (
 				FA3B0935290A95C700D1C842 /* AppDelegate.swift */,
 				FA3B0937290A95C700D1C842 /* SceneDelegate.swift */,
-				FA3B0939290A95C700D1C842 /* ViewController.swift */,
+				FA3B0939290A95C700D1C842 /* HomeVC.swift */,
+				FAC0545A290BEF8C00C1C2DD /* NewsDetailVC.swift */,
 				FA3B093B290A95C700D1C842 /* Main.storyboard */,
 				FA3B093E290A95C800D1C842 /* Assets.xcassets */,
 				FA3B0940290A95C800D1C842 /* LaunchScreen.storyboard */,
 				FA3B0943290A95C800D1C842 /* Info.plist */,
+				FA3B0970290AABE100D1C842 /* NewsCell.swift */,
+				FA3B0972290AADE700D1C842 /* NewsData.swift */,
+				FA3B0974290AAF6600D1C842 /* NewsManager.swift */,
+				FA3B0979290AE1E200D1C842 /* NewsDetailData.swift */,
+				FAC05458290BE82E00C1C2DD /* NewsDetailManager.swift */,
 			);
 			path = TurkMedyaCase;
 			sourceTree = "<group>";
 		};
+		FA3B094F290A96BA00D1C842 /* StreamingKit */ = {
+			isa = PBXGroup;
+			children = (
+				FA3B0950290A96BA00D1C842 /* StreamingKit.h */,
+				FA3B0951290A96BA00D1C842 /* StreamingKit.docc */,
+				FA3B096C290A973F00D1C842 /* StreamingVideoPlayer.swift */,
+			);
+			path = StreamingKit;
+			sourceTree = "<group>";
+		};
+		FA3B095D290A96BB00D1C842 /* StreamingKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				FA3B095E290A96BB00D1C842 /* StreamingKitTests.swift */,
+			);
+			path = StreamingKitTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		FA3B0949290A96BA00D1C842 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA3B0960290A96BB00D1C842 /* StreamingKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		FA3B0931290A95C700D1C842 /* TurkMedyaCase */ = {
@@ -77,15 +197,57 @@
 				FA3B092E290A95C700D1C842 /* Sources */,
 				FA3B092F290A95C700D1C842 /* Frameworks */,
 				FA3B0930290A95C700D1C842 /* Resources */,
+				FA3B0968290A96BB00D1C842 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA3B0962290A96BB00D1C842 /* PBXTargetDependency */,
+			);
+			name = TurkMedyaCase;
+			packageProductDependencies = (
+				FA3B0977290ABB6E00D1C842 /* Kingfisher */,
+			);
+			productName = TurkMedyaCase;
+			productReference = FA3B0932290A95C700D1C842 /* TurkMedyaCase.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FA3B094D290A96BA00D1C842 /* StreamingKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA3B0965290A96BB00D1C842 /* Build configuration list for PBXNativeTarget "StreamingKit" */;
+			buildPhases = (
+				FA3B0949290A96BA00D1C842 /* Headers */,
+				FA3B094A290A96BA00D1C842 /* Sources */,
+				FA3B094B290A96BA00D1C842 /* Frameworks */,
+				FA3B094C290A96BA00D1C842 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = TurkMedyaCase;
-			productName = TurkMedyaCase;
-			productReference = FA3B0932290A95C700D1C842 /* TurkMedyaCase.app */;
-			productType = "com.apple.product-type.application";
+			name = StreamingKit;
+			productName = StreamingKit;
+			productReference = FA3B094E290A96BA00D1C842 /* StreamingKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FA3B0956290A96BB00D1C842 /* StreamingKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA3B0969290A96BB00D1C842 /* Build configuration list for PBXNativeTarget "StreamingKitTests" */;
+			buildPhases = (
+				FA3B0953290A96BB00D1C842 /* Sources */,
+				FA3B0954290A96BB00D1C842 /* Frameworks */,
+				FA3B0955290A96BB00D1C842 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA3B095A290A96BB00D1C842 /* PBXTargetDependency */,
+				FA3B095C290A96BB00D1C842 /* PBXTargetDependency */,
+			);
+			name = StreamingKitTests;
+			productName = StreamingKitTests;
+			productReference = FA3B0957290A96BB00D1C842 /* StreamingKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -100,6 +262,13 @@
 					FA3B0931290A95C700D1C842 = {
 						CreatedOnToolsVersion = 13.3.1;
 					};
+					FA3B094D290A96BA00D1C842 = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+					FA3B0956290A96BB00D1C842 = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = FA3B0931290A95C700D1C842;
+					};
 				};
 			};
 			buildConfigurationList = FA3B092D290A95C700D1C842 /* Build configuration list for PBXProject "TurkMedyaCase" */;
@@ -111,11 +280,16 @@
 				Base,
 			);
 			mainGroup = FA3B0929290A95C700D1C842;
+			packageReferences = (
+				FA3B0976290ABB6E00D1C842 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = FA3B0933290A95C700D1C842 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				FA3B0931290A95C700D1C842 /* TurkMedyaCase */,
+				FA3B094D290A96BA00D1C842 /* StreamingKit */,
+				FA3B0956290A96BB00D1C842 /* StreamingKitTests */,
 			);
 		};
 /* End PBXProject section */
@@ -131,6 +305,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FA3B094C290A96BA00D1C842 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA3B0955290A96BB00D1C842 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -138,13 +326,54 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA3B093A290A95C700D1C842 /* ViewController.swift in Sources */,
+				FA3B093A290A95C700D1C842 /* HomeVC.swift in Sources */,
+				FAC0545B290BEF8C00C1C2DD /* NewsDetailVC.swift in Sources */,
 				FA3B0936290A95C700D1C842 /* AppDelegate.swift in Sources */,
+				FA3B0971290AABE100D1C842 /* NewsCell.swift in Sources */,
+				FA3B097A290AE1E200D1C842 /* NewsDetailData.swift in Sources */,
+				FA3B0973290AADE700D1C842 /* NewsData.swift in Sources */,
+				FAC05459290BE82E00C1C2DD /* NewsDetailManager.swift in Sources */,
+				FA3B0975290AAF6600D1C842 /* NewsManager.swift in Sources */,
 				FA3B0938290A95C700D1C842 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FA3B094A290A96BA00D1C842 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA3B096D290A973F00D1C842 /* StreamingVideoPlayer.swift in Sources */,
+				FA3B0952290A96BA00D1C842 /* StreamingKit.docc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA3B0953290A96BB00D1C842 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA3B095F290A96BB00D1C842 /* StreamingKitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FA3B095A290A96BB00D1C842 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA3B094D290A96BA00D1C842 /* StreamingKit */;
+			targetProxy = FA3B0959290A96BB00D1C842 /* PBXContainerItemProxy */;
+		};
+		FA3B095C290A96BB00D1C842 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA3B0931290A95C700D1C842 /* TurkMedyaCase */;
+			targetProxy = FA3B095B290A96BB00D1C842 /* PBXContainerItemProxy */;
+		};
+		FA3B0962290A96BB00D1C842 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA3B094D290A96BA00D1C842 /* StreamingKit */;
+			targetProxy = FA3B0961290A96BB00D1C842 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		FA3B093B290A95C700D1C842 /* Main.storyboard */ = {
@@ -283,6 +512,7 @@
 		FA3B0947290A95C800D1C842 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -311,6 +541,7 @@
 		FA3B0948290A95C800D1C842 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -336,6 +567,102 @@
 			};
 			name = Release;
 		};
+		FA3B0966290A96BB00D1C842 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 2595SK9L74;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rukiyesenturk.StreamingKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FA3B0967290A96BB00D1C842 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 2595SK9L74;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rukiyesenturk.StreamingKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FA3B096A290A96BB00D1C842 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2595SK9L74;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rukiyesenturk.StreamingKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TurkMedyaCase.app/TurkMedyaCase";
+			};
+			name = Debug;
+		};
+		FA3B096B290A96BB00D1C842 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2595SK9L74;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rukiyesenturk.StreamingKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TurkMedyaCase.app/TurkMedyaCase";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -357,7 +684,44 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		FA3B0965290A96BB00D1C842 /* Build configuration list for PBXNativeTarget "StreamingKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA3B0966290A96BB00D1C842 /* Debug */,
+				FA3B0967290A96BB00D1C842 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA3B0969290A96BB00D1C842 /* Build configuration list for PBXNativeTarget "StreamingKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA3B096A290A96BB00D1C842 /* Debug */,
+				FA3B096B290A96BB00D1C842 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FA3B0976290ABB6E00D1C842 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FA3B0977290ABB6E00D1C842 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA3B0976290ABB6E00D1C842 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FA3B092A290A95C700D1C842 /* Project object */;
 }
